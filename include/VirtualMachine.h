@@ -25,7 +25,6 @@ class VirtualMachine : public InstructionVisitor {
 
 private:
 
-
   /**
    * The set of instructions, i.e. the program.
    */
@@ -71,6 +70,10 @@ private:
    */
   bool finished_;
 
+
+  //
+  // Abstract methods inherited from InstructionVisitor.
+  //
 
   virtual void visit(Push& instr) override;
   virtual void visit(Dupl& instr) override;
