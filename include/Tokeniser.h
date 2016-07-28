@@ -14,7 +14,6 @@
 
 namespace whitepp {
 
-
 /**
  * This class implements the tokeniser.
  */
@@ -59,7 +58,6 @@ public:
   }
 
 };
-
 
 } // namespace whitepp
 

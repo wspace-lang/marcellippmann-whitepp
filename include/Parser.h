@@ -78,15 +78,15 @@ private:
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
+  /**
+   * The default constructor.
+   */
   Push(int const num) : num_(num) {}
 
 
-	/**
-	 * The destructor.
-	 */
+  /**
+   * The destructor.
+   */
   virtual ~Push() {}
 
 
@@ -115,16 +115,16 @@ class Dupl : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	Dupl() {}
+  /**
+   * The default constructor.
+   */
+  Dupl() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~Dupl() {}
+  /**
+   * The destructor.
+   */
+  virtual ~Dupl() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -144,16 +144,16 @@ class Swap : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	Swap() {}
+  /**
+   * The default constructor.
+   */
+  Swap() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~Swap() {}
+  /**
+   * The destructor.
+   */
+  virtual ~Swap() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -173,16 +173,16 @@ class Discard : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	Discard() {}
+  /**
+   * The default constructor.
+   */
+  Discard() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~Discard() {}
+  /**
+   * The destructor.
+   */
+  virtual ~Discard() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -202,16 +202,16 @@ class Add : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	Add() {}
+  /**
+   * The default constructor.
+   */
+  Add() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~Add() {}
+  /**
+   * The destructor.
+   */
+  virtual ~Add() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -231,16 +231,16 @@ class Sub : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	Sub() {}
+  /**
+   * The default constructor.
+   */
+  Sub() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~Sub() {}
+  /**
+   * The destructor.
+   */
+  virtual ~Sub() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -260,16 +260,16 @@ class Mul : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	Mul() {}
+  /**
+   * The default constructor.
+   */
+  Mul() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~Mul() {}
+  /**
+   * The destructor.
+   */
+  virtual ~Mul() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -289,16 +289,16 @@ class Div : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	Div() {}
+  /**
+   * The default constructor.
+   */
+  Div() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~Div() {}
+  /**
+   * The destructor.
+   */
+  virtual ~Div() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -318,16 +318,16 @@ class Mod : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	Mod() {}
+  /**
+   * The default constructor.
+   */
+  Mod() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~Mod() {}
+  /**
+   * The destructor.
+   */
+  virtual ~Mod() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -347,16 +347,16 @@ class Store : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	Store() {}
+  /**
+   * The default constructor.
+   */
+  Store() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~Store() {}
+  /**
+   * The destructor.
+   */
+  virtual ~Store() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -376,16 +376,16 @@ class Retrieve : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	Retrieve() {}
+  /**
+   * The default constructor.
+   */
+  Retrieve() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~Retrieve() {}
+  /**
+   * The destructor.
+   */
+  virtual ~Retrieve() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -409,16 +409,16 @@ private:
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	SetLbl(std::string const& label) : label_(label) {}
+  /**
+   * The default constructor.
+   */
+  SetLbl(std::string const& label) : label_(label) {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~SetLbl() {}
+  /**
+   * The destructor.
+   */
+  virtual ~SetLbl() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -443,16 +443,16 @@ private:
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	CallLbl(std::string const& label) : label_(label) {}
+  /**
+   * The default constructor.
+   */
+  CallLbl(std::string const& label) : label_(label) {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~CallLbl() {}
+  /**
+   * The destructor.
+   */
+  virtual ~CallLbl() {}
 
 
   /**
@@ -485,16 +485,16 @@ private:
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	Jump(std::string const& label) : label_(label) {}
+  /**
+   * The default constructor.
+   */
+  Jump(std::string const& label) : label_(label) {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~Jump() {}
+  /**
+   * The destructor.
+   */
+  virtual ~Jump() {}
 
 
   /**
@@ -527,16 +527,16 @@ private:
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	JumpZero(std::string const& label) : label_(label) {}
+  /**
+   * The default constructor.
+   */
+  JumpZero(std::string const& label) : label_(label) {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~JumpZero() {}
+  /**
+   * The destructor.
+   */
+  virtual ~JumpZero() {}
 
 
   /**
@@ -569,16 +569,16 @@ private:
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	JumpNeg(std::string const& label) : label_(label) {}
+  /**
+   * The default constructor.
+   */
+  JumpNeg(std::string const& label) : label_(label) {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~JumpNeg() {}
+  /**
+   * The destructor.
+   */
+  virtual ~JumpNeg() {}
 
 
   /**
@@ -606,16 +606,16 @@ class Ret : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	Ret() {}
+  /**
+   * The default constructor.
+   */
+  Ret() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~Ret() {}
+  /**
+   * The destructor.
+   */
+  virtual ~Ret() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -635,16 +635,16 @@ class End : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	End() {}
+  /**
+   * The default constructor.
+   */
+  End() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~End() {}
+  /**
+   * The destructor.
+   */
+  virtual ~End() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -664,16 +664,16 @@ class PrintChar : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	PrintChar() {}
+  /**
+   * The default constructor.
+   */
+  PrintChar() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~PrintChar() {}
+  /**
+   * The destructor.
+   */
+  virtual ~PrintChar() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -693,16 +693,16 @@ class PrintInt : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	PrintInt() {}
+  /**
+   * The default constructor.
+   */
+  PrintInt() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~PrintInt() {}
+  /**
+   * The destructor.
+   */
+  virtual ~PrintInt() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -722,16 +722,16 @@ class ReadChar : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	ReadChar() {}
+  /**
+   * The default constructor.
+   */
+  ReadChar() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~ReadChar() {}
+  /**
+   * The destructor.
+   */
+  virtual ~ReadChar() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
@@ -751,16 +751,16 @@ class ReadInt : public Instruction {
 
 public:
 
-	/**
-	 * The default constructor.
-	 */
-	ReadInt() {}
+  /**
+   * The default constructor.
+   */
+  ReadInt() {}
 
 
-	/**
-	 * The destructor.
-	 */
-	virtual ~ReadInt() {}
+  /**
+   * The destructor.
+   */
+  virtual ~ReadInt() {}
 
 
   virtual void accept(InstructionVisitor& visitor) override;
