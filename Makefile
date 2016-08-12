@@ -11,7 +11,7 @@ BINDIR      = bin
 INCLUDEDIR  = include
 BUILDDIR    = build
 
-CXX         = g++
+CXX        ?= g++
 
 CXXFLAGS   += -O3 -Wall -std=gnu++14 -I $(INCLUDEDIR) -c
 LDFLAGS    +=
