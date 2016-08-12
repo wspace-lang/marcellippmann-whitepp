@@ -1,0 +1,16 @@
+language: cpp
+
+compiler: gcc
+
+install:
+  - export CXX="g++-6"
+
+script:
+  - make VERBOSE=1
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-6
