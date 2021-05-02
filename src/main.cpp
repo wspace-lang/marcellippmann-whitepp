@@ -20,7 +20,7 @@ using namespace whitepp;
 
 void print_usage(std::string const& prgName, std::string const& errorMsg) {
 
-  std::cout << "Usage: "   << prgName  << "FILE" << std::endl
+  std::cout << "Usage: "   << prgName  << " FILE" << std::endl
             << "This program is a whitespace interpreter." << std::endl
             << "FILE is a whitespace program." << std::endl
             << "  Error: " << errorMsg << std::endl;
